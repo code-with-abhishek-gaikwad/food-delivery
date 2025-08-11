@@ -18,7 +18,7 @@ connectDB();
 
 //api endpoints
 app.use("/api/food",foodRouter)
-app.use("/images",express.static('uploads'))
+app.use("/images",express.static('uploads')) 
 
 app.get("/",(req,res)=>{
     res.send("API Working")
@@ -28,3 +28,4 @@ app.listen(port,()=>{
     console.log(`server started on http://localhost:${port}`)
 })
 
+//mongodb+srv://abhistack:<db_password>@cluster0.s27ei0y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
